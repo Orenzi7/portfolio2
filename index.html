@@ -298,24 +298,36 @@
       <!-- Projects Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <!-- Weather App Project -->
-        <div class="project-card border border-blue-500/30 rounded-lg overflow-hidden hover:border-blue-500 transition-all duration-300 section-enter cursor-pointer hover:scale-105" onclick="showProjectDetail('weather')">
-          <div class="h-48 relative overflow-hidden">
-            <iframe src="https://weatherappbegining.netlify.app/" class="w-full h-full scale-75 origin-top-left transform pointer-events-none border-none"></iframe>
-            <div class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <div class="bg-blue-600/90 px-4 py-2 rounded-lg text-sm font-semibold">Click to view details</div>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3">Weather App</h3>
-            <p class="text-gray-400 mb-4">Real-time weather data with beautiful animations and intuitive design</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">JavaScript</span>
-              <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">API</span>
-              <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">CSS3</span>
-            </div>
-          </div>
-        </div>
+     <!-- Weather App Project -->
+<div class="project-card border border-blue-500/30 rounded-lg overflow-hidden hover:border-blue-500 transition-all duration-300 section-enter cursor-pointer hover:scale-105" onclick="showProjectDetail('weather')">
+  <div class="h-48 relative overflow-hidden">
+    <!-- Preview iframe -->
+    <iframe 
+      src="https://weatherappbegining.netlify.app/" 
+      class="w-full h-full border-none pointer-events-none"
+      loading="lazy">
+    </iframe>
+
+    <!-- Hover overlay -->
+    <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+      <div class="bg-blue-600/90 px-4 py-2 rounded-lg text-sm font-semibold text-white shadow-lg">
+        Click to view details
+      </div>
+    </div>
+  </div>
+
+  <!-- Project info -->
+  <div class="p-6">
+    <h3 class="text-xl font-bold mb-3">Weather App</h3>
+    <p class="text-gray-400 mb-4">Real-time weather data with beautiful animations and intuitive design</p>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">JavaScript</span>
+      <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">API</span>
+      <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">CSS3</span>
+    </div>
+  </div>
+</div>
+
         
         <!-- Creative Project -->
         <div class="project-card border border-blue-500/30 rounded-lg overflow-hidden hover:border-blue-500 transition-all duration-300 section-enter cursor-pointer hover:scale-105" onclick="showProjectDetail('creative')">
