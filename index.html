@@ -329,21 +329,36 @@
 </div>
 
         
-        <!-- Creative Project -->
-        <div class="project-card border border-blue-500/30 rounded-lg overflow-hidden hover:border-blue-500 transition-all duration-300 section-enter cursor-pointer hover:scale-105" onclick="showProjectDetail('creative')">
-          <div class="h-48 bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
-            <div class="text-4xl text-white">✨</div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3">Creative Lab</h3>
-            <p class="text-gray-400 mb-4">Experimental digital art and interactive installations</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">Three.js</span>
-              <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">WebGL</span>
-              <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">Canvas</span>
-            </div>
-          </div>
-        </div>
+         <!-- Church website  -->
+<div class="project-card border border-blue-500/30 rounded-lg overflow-hidden hover:border-blue-500 transition-all duration-300 section-enter cursor-pointer hover:scale-105" onclick="showProjectDetail('church')">
+  <div class="h-48 relative overflow-hidden">
+    <!-- Preview iframe -->
+    <iframe 
+      src="https://nrbcarepo.netlify.app/" 
+      class="w-full h-full border-none pointer-events-none"
+      loading="lazy">
+    </iframe>
+
+    <!-- Hover overlay -->
+    <div class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+      <div class="bg-blue-600/90 px-4 py-2 rounded-lg text-sm font-semibold text-white shadow-lg">
+        Click to view details
+      </div>
+    </div>
+  </div>
+
+  <!-- Project info -->
+  <div class="p-6">
+    <h3 class="text-xl font-bold mb-3">Church app</h3>
+    <p class="text-gray-400 mb-4">Church website with insane verse change per second </p>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">JavaScript</span>
+      <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">Html</span>
+      <span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs">CSS3</span>
+    </div>
+  </div>
+</div>
+
         
         <!-- UI/UX Project -->
         <div class="project-card border border-blue-500/30 rounded-lg overflow-hidden hover:border-blue-500 transition-all duration-300 section-enter cursor-pointer hover:scale-105" onclick="showProjectDetail('design')">
@@ -738,39 +753,31 @@
             </div>
           `
         },
-        creative: {
-          title: 'Creative Lab',
-          subtitle: 'Experimental digital art and interactions',
+        church: {
+          title: 'Church App',
+          subtitle: 'Real-time church app with beautiful UI',
           content: `
             <div class="space-y-8">
-              <div class="text-center py-16">
-                <div class="relative inline-block">
-                  <div class="text-8xl animate-float">✨</div>
-                  <div class="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-xl animate-pulse"></div>
-                </div>
-                <h4 class="text-3xl font-bold mt-8 mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Coming Soon
-                </h4>
-                <p class="text-xl text-gray-400 max-w-md mx-auto">
-                  An immersive digital playground featuring interactive art installations and experimental web technologies.
-                </p>
+              <div class="aspect-video rounded-2xl overflow-hidden glass-card">
+                <iframe src="https://nrbcarepo.netlify.app/" class="w-full h-full border-none"></iframe>
               </div>
-              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="glass-card p-4 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                  <div class="text-2xl mb-2">🎨</div>
-                  <div class="text-sm text-gray-400">WebGL</div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-xl font-bold mb-4 text-purple-300">Features</h4>
+                  <ul class="space-y-2 text-gray-300">
+                    <li class="flex items-center gap-3"><span class="text-green-400">✓</span> Real-time </li>
+                    <li class="flex items-center gap-3"><span class="text-green-400">✓</span> Beautiful animations</li>
+                    <li class="flex items-center gap-3"><span class="text-green-400">✓</span> Responsive design</li>
+                    <li class="flex items-center gap-3"><span class="text-green-400">✓</span> verse changer</li>
+                  </ul>
                 </div>
-                <div class="glass-card p-4 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                  <div class="text-2xl mb-2">🌊</div>
-                  <div class="text-sm text-gray-400">Three.js</div>
-                </div>
-                <div class="glass-card p-4 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                  <div class="text-2xl mb-2">⚡</div>
-                  <div class="text-sm text-gray-400">GSAP</div>
-                </div>
-                <div class="glass-card p-4 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                  <div class="text-2xl mb-2">🎭</div>
-                  <div class="text-sm text-gray-400">Canvas</div>
+                <div>
+                  <h4 class="text-xl font-bold mb-4 text-blue-300">Technologies</h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-500/20 rounded-full text-sm">JavaScript</span>
+                    <span class="px-3 py-1 bg-purple-500/20 rounded-full text-sm">CSS3</span>
+                    <span class="px-3 py-1 bg-green-500/20 rounded-full text-sm">Responsive</span>
+                  </div>
                 </div>
               </div>
             </div>
